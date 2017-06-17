@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Shopping</title>
+    <title>Localização</title>
     <meta name="description" content="WebApp de exemplo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
@@ -35,26 +35,25 @@
 <div class="current-page">
 
 
-<main class="home">
-	
-	<h1 class="z-depth-1">O Shopping</h1>
+<main class="loja">
 
-	<div class="collection z-depth-1">
-		<a href="lojas.html" class="collection-item waves-effect">
-			<i class="material-icons">card_giftcard</i>
-			Lojas &amp; Restaurantes
-		</a>	
-
-		<a href="pagar-estacionamento.html" class="collection-item waves-effect">
-			<i class="material-icons">directions_car</i>
-			Pagar estacionamento
+	<div class="parallax-container">
+		<a href="index.html">
+			<i class="material-icons waves-effect waves-light waves-circle">arrow_back</i>
 		</a>
 
-		<a href="localizacao.html" class="collection-item waves-effect" target="_blank">
-			<i class="material-icons">loyalty</i>
-			Localização
-		</a>
+        <div class="parallax">
+			<img src="img/loja/localizacao.jpg" alt="Localização">
+		</div>
 	</div>
+
+    <div>
+        <button onclick="getLocation()" class="btn waves-effect waves-light">Obter Localização</button>
+        </br>
+        <div id="mapholder"></div>
+    </div>
+
+	
 
 </main>
 
@@ -69,7 +68,8 @@
 <script src="js/pagamento.js"></script>
 <script src="js/vendor/quagga.min.js"></script>
 <script src="js/barcode.js"></script>
+<script src="js/mapa.js"></script>
+
 
 </body>
 </html>
-
